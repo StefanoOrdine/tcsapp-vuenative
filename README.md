@@ -2,6 +2,12 @@
 
 * Some Native Base feature does not work as expected for Vue Native like they does for React Native, like the container needs to be manually top-padded...
 * All React Native libraries usually do not have the vue native support so they cannot be used with Vue Native ... see for example https://github.com/mfrachet/rn-placeholder
+* The above statement is totally not true!!! We managed to use [HTMLView](https://github.com/jsdf/react-native-htmlview) to render raw html into the virtual DOM.
+
+# TODO
+
+* Use [rn-placeholder](https://github.com/mfrachet/rn-placeholder) to provide placeholders.
+
 
 # Auto-generated README
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
