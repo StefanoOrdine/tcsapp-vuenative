@@ -3,13 +3,14 @@
     <event-card v-for="event in eventList" :key="event.id"
       :title="event.title.rendered"
       :text="event.content.rendered"
-      :imageUri="event._links['wp:featuredmedia'][0].href"
+      :imageUri="getImageHref(event, '_links.wp:featuredmedia.0.href')"
     />
   </view>
 </template>
 
 <script>
 import axios from 'axios'
+import { get } from 'lodash'
 
 import EventCard from './EventCard'
 
@@ -23,6 +24,10 @@ export default {
   data: function() {
     return { eventList: [] }
   },
-  methods: {}
+  methods: {
+    getImageHref (event, objectPath) {
+      return get(event, objectPath)
+    }
+  }
 }
 </script>
