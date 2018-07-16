@@ -1,6 +1,6 @@
 <template>
   <nb-container class="container">
-    <app-loading v-if="!isAppReady"> </app-loading>
+    <app-loading v-if="!isAppReady" />
     <nb-header v-if="isAppReady">
       <nb-body>
         <nb-title>Torino Coding Society</nb-title>

@@ -6,7 +6,7 @@
 
 # TODO
 
-* Use [rn-placeholder](https://github.com/mfrachet/rn-placeholder) to provide placeholders.
+* Routing with React Navigation interacting with the Native Base frontend UI library.
 
 
 # Auto-generated README
